@@ -38,8 +38,8 @@ def soulution(n, socials):
         # print("\n")
 
     print(len(ans))
-    # for fr in ans:
-    #     print(*fr)
+    for fr in ans:
+        print(*fr)
 
 
 

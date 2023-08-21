@@ -28,7 +28,7 @@ for i in range(3,int(math.sqrt(num))+1,2):
         num = num / i
 if num > 2:
     count[num] += 1
-count = list(list(count.items()))
+count = list(count.items())
 count.sort()
 
 print(count)

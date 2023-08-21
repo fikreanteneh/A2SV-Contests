@@ -42,23 +42,18 @@ def primeFactors(num):
         answer += special
         special += 1
         return
+    
     tot = list(tot.items())
     needed = list(needed.items())
     tot.sort()
     needed.sort()
     tot = tuple(tot)
     needed = tuple(needed)
-    # print(main,"------", special,"----", needed)
     answer += main[needed]
-    # print(answer)
     main[tot] += 1
-
-
-
 
 for i in nums:
     primeFactors(i)
-# print(main)
 print(answer)
 
 

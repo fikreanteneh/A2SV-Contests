@@ -19,18 +19,14 @@ possible = defaultdict(int)
 
 for i in range(n):
     string = Counter(S())
-    # remaining = ["0"] * 26
     id = 0
     for letter, count in string.items():
         if count % 2:
             id ^= (1 << (ord(letter) - 97) )
-    # remaining.reverse()
-    # id = int("".join(remaining), 2)
     answer += possible[id]
     for i in range(26):
         answer += (possible[id ^ (1 << i)])
     possible[id] += 1
-
 
 print(answer)
 
